@@ -80,29 +80,13 @@ export default function CaseStudyModal({ project, isOpen, onClose }) {
           </div>
         </div>
 
-        {/* Interactive Visual Preview Mockup Box */}
-        <div className="relative rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 p-4 sm:p-6 mb-8 overflow-hidden">
-          <div className="flex items-center justify-between pb-4 mb-4 border-b border-zinc-200 dark:border-zinc-900 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700"></span>
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700"></span>
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700"></span>
-              <span className="ml-2 text-[11px] text-zinc-500 dark:text-zinc-400">interactive_preview.tsx</span>
-            </div>
-            <span>RENDER_MODE: CLIENT_OPTIMIZED</span>
-          </div>
-
-          <div className="py-8 px-4 text-center">
-            <div className="max-w-md mx-auto space-y-3">
-              <div className="h-4 bg-zinc-200 dark:bg-zinc-800/80 rounded w-3/4 mx-auto animate-pulse"></div>
-              <div className="h-3 bg-zinc-200/60 dark:bg-zinc-800/50 rounded w-1/2 mx-auto"></div>
-              <div className="h-20 bg-white dark:bg-zinc-900/60 rounded-lg border border-zinc-200 dark:border-zinc-800/60 mt-4 flex items-center justify-center p-4">
-                <span className="text-xs font-mono text-zinc-600 dark:text-zinc-400">
-                  // {project.shortDescription}
-                </span>
-              </div>
-            </div>
-          </div>
+        {/* Interactive Visual Preview Screenshot */}
+        <div className="relative rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 overflow-hidden mb-8 shadow-xs">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full max-h-80 object-cover object-top"
+          />
         </div>
 
         {/* Tab Navigation for Case Study Sections */}

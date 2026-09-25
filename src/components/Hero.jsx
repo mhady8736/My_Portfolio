@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowDown, ArrowUpRight, Upload, Sparkles, Terminal, Code2, Globe } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Upload, Sparkles, Terminal, Code2, Globe, Download, FileText } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
@@ -108,11 +108,13 @@ export default function Hero() {
             </a>
 
             <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-zinc-300 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 bg-zinc-100/60 dark:bg-zinc-900/40 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-white font-medium text-sm transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+              href={personalInfo.cvUrl || "/Mohamed_Abdel_Hady_CV.pdf"}
+              download="Mohamed_Abdel_Hady_CV.pdf"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-zinc-300 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 bg-zinc-100/70 dark:bg-zinc-900/50 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/60 text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-white font-medium text-sm transition-all duration-200 shadow-xs hover:shadow hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+              title="Download Mohamed Abdel Hady CV (PDF)"
             >
-              <span>{personalInfo.secondaryCta}</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <Download className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+              <span>Download CV</span>
             </a>
           </div>
 
@@ -190,7 +192,7 @@ export default function Hero() {
                   alt="Mohamed Abdel Hady — Frontend Developer"
                   onLoad={() => { setImageLoaded(true); setImageError(false); }}
                   onError={() => { setImageError(true); setImageLoaded(false); }}
-                  className={`w-full h-full object-cover object-center grayscale contrast-110 brightness-95 transition-all duration-700 group-hover:scale-105 group-hover:contrast-125 ${
+                  className={`w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105 ${
                     imageLoaded ? 'opacity-100' : 'opacity-0'
                   }`}
                 />
