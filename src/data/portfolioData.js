@@ -239,6 +239,34 @@ export const projectsData = [
         "Consistent typography and button component states across interactive elements"
       ]
     }
+  },
+  {
+    id: "burger-rush",
+    title: "Burger Rush — Fast Food Ordering & Restaurant Web App",
+    category: "HTML5 / CSS3 / JavaScript / Food Ordering",
+    shortDescription: "A high-conversion online food ordering web experience for a gourmet burger restaurant, featuring interactive menus, cart management, bilingual support, and dark/light modes.",
+    image: "/projects/burger-rush.png",
+    technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "UI/UX Design", "Responsive Layout", "Vercel"],
+    githubUrl: "https://github.com/mhady8736/Burger-Rush-",
+    liveDemoUrl: "https://burger-rush-three.vercel.app/",
+    featured: true,
+    caseStudy: {
+      tagline: "Engineering an appetizing, high-performance online food ordering and restaurant discovery platform",
+      overview: "Burger Rush is a vibrant commercial restaurant web application designed to deliver an engaging, mouth-watering digital ordering experience. The platform highlights specialty burger collections, customer reviews, branch locations, and instant 30-minute delivery guarantees with an intuitive shopping cart flow.",
+      problem: "Restaurant websites often suffer from unoptimized high-res images causing slow initial loads, clunky mobile ordering experiences, and lack of localized language support for diverse audiences.",
+      approach: "Built a mobile-first, responsive web application utilizing semantic HTML5 and modern CSS3. Implemented a shopping cart state counter, bilingual toggle (English & Arabic), instant theme customization (Dark & Light modes), and accessible CTA pathways.",
+      keyFeatures: [
+        "Interactive food menu with category browsing and real-time shopping cart counter",
+        "Bilingual localization support (English & Arabic) with smooth layout direction switches",
+        "Dark and Light theme toggle for comfortable browsing day and night",
+        "Mobile-first responsive design guaranteeing rapid ordering on mobile devices"
+      ],
+      architecturalHighlights: [
+        "Optimized media delivery ensuring rapid First Contentful Paint despite rich hero imagery",
+        "Pure JavaScript DOM manipulation for lightweight cart state and theme persistence",
+        "Semantic layout with accessible interactive controls for touch and keyboard users"
+      ]
+    }
   }
 ];
 
