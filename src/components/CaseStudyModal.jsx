@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X, ExternalLink, CheckCircle2, Terminal } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
@@ -211,7 +211,7 @@ export default function CaseStudyModal({ project, isOpen, onClose }) {
         {/* Modal Footer Actions: Live Demo & GitHub */}
         <div className="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap items-center justify-between gap-4">
           <div className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
-            Repository: {project.id} // branch: main
+            Repository: {project.githubUrl.replace('https://github.com/', '')} // branch: main
           </div>
 
           <div className="flex items-center gap-3">

@@ -10,16 +10,16 @@ export default function Projects() {
 
   const categories = [
     { id: 'all', label: 'All Projects' },
-    { id: 'react', label: 'React & UI' },
-    { id: 'api', label: 'API Integration' },
+    { id: 'react', label: 'React.js' },
     { id: 'html-css', label: 'HTML5 & CSS3' },
+    { id: 'ui-ux', label: 'UI/UX & Responsive' },
   ];
 
   const filteredProjects = projectsData.filter((p) => {
     if (selectedCategory === 'all') return true;
-    if (selectedCategory === 'react') return p.technologies.includes('React');
-    if (selectedCategory === 'api') return p.technologies.includes('REST API');
-    if (selectedCategory === 'html-css') return p.technologies.includes('HTML5');
+    if (selectedCategory === 'react') return p.technologies.some(t => t.toLowerCase().includes('react'));
+    if (selectedCategory === 'html-css') return p.technologies.some(t => t.toLowerCase().includes('html5') || t.toLowerCase().includes('css3'));
+    if (selectedCategory === 'ui-ux') return p.technologies.some(t => t.toLowerCase().includes('ui/ux') || t.toLowerCase().includes('responsive'));
     return true;
   });
 

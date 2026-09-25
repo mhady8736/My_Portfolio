@@ -156,90 +156,88 @@ export const skillsData = {
 
 export const projectsData = [
   {
-    id: "aura-ecommerce",
-    title: "Aura Store — E-Commerce Web Application",
-    category: "React / REST API / E-Commerce",
-    shortDescription: "A fully responsive e-commerce web application consuming live REST endpoints, featuring product catalogs, real-time cart state, and clean UI/UX design.",
-    image: "/projects/pulse.png",
-    technologies: ["React", "JavaScript", "REST APIs", "HTML5", "CSS3", "Git"],
-    githubUrl: "https://github.com/mhady8736",
-    liveDemoUrl: "https://github.com/mhady8736",
+    id: "food-rescue",
+    title: "Food Rescue — Surplus Food Redistribution Platform",
+    category: "React.js / Web App / Food Rescue",
+    shortDescription: "A community-focused web platform designed to combat food waste by connecting donors, local volunteers, and relief charities to redistribute surplus meals efficiently in real-time.",
+    technologies: ["React", "JavaScript (ES6+)", "Tailwind CSS", "Responsive UI", "Material Symbols", "Git"],
+    githubUrl: "https://github.com/mhady8736/Food-Rescue",
+    liveDemoUrl: "https://food-rescue-five-self.vercel.app/",
     featured: true,
     caseStudy: {
-      tagline: "Engineering a responsive e-commerce platform with dynamic REST API integration",
-      overview: "Built as part of practical development projects to demonstrate real-world commercial web interface engineering. Aura Store provides customers with a fluid browsing, filtering, and shopping experience across all device viewports.",
-      problem: "E-commerce frontends frequently face performance hiccups during client-side search filtering, cart state inconsistencies, and poor mobile adaptation on budget devices.",
-      approach: "Engineered a component-driven React application consuming RESTful product feeds. Designed responsive layouts using CSS Grid and Flexbox, with optimistic cart updates and clean error-handling states.",
+      tagline: "Connecting food surplus with community hunger through fast, accessible digital coordination",
+      overview: "Food Rescue (Loom & Larder / HarvestLink) is an impactful community web application designed to reduce food waste and support food-insecure families. The platform enables local food suppliers, bakeries, and restaurants to post surplus food batches, allowing volunteers and charity shelters to coordinate pickups and distribution before good food goes to waste.",
+      problem: "Every day, tons of quality prepared meals and fresh produce are discarded because donors lack direct, low-friction communication channels to notify local volunteers and charities in their immediate vicinity.",
+      approach: "Built a responsive, mobile-first React application with fluid typography (Cairo & Lexend), clear visual status tags, and localized bilingual accessibility. Optimized for quick interactions so donors can list surplus meals in seconds and volunteers can instantly claim pickups.",
       keyFeatures: [
-        "Product catalog with real-time category filtering and price sorting",
-        "Persistent shopping cart state with live price calculation and item removal",
-        "Responsive design tested across mobile, tablet, and desktop screens",
-        "REST API integration with graceful loading states and error boundaries"
+        "Surplus listing feed featuring meal details, expiration timers, and quantity badges",
+        "Interactive claim status workflow for volunteers and community distribution centers",
+        "Bilingual layout support (English & Arabic) with accessible typographic hierarchy",
+        "Mobile-first responsive architecture tailored for rapid on-site logistics"
       ],
       architecturalHighlights: [
-        "Structured React component hierarchy with reusable UI elements",
-        "Clean separation between API consumption logic and UI components",
-        "Semantic HTML5 document outline ensuring accessible navigation"
+        "Modular React component hierarchy separating stateful data flows from presentational UI",
+        "Tailwind CSS utility styling ensuring minimal bundle size and rapid render speed",
+        "Accessible touch targets and high-contrast color scheme for on-the-go outdoor usage"
       ]
     }
   },
   {
-    id: "pulse-dashboard",
-    title: "Pulse — RESTful Data Explorer & Metrics Web App",
-    category: "React / REST API Integration",
-    shortDescription: "An interactive analytical web application consuming live REST endpoints, featuring debounced multi-parameter filtering and responsive data grids.",
-    image: "/projects/pulse.png",
-    technologies: ["React", "REST APIs", "Modern JavaScript", "CSS Grid", "GitHub"],
-    githubUrl: "https://github.com/mhady8736",
-    liveDemoUrl: "https://github.com/mhady8736",
+    id: "positivus",
+    title: "Positivus — Digital Marketing Agency Landing Page",
+    category: "HTML5 / CSS3 / JavaScript / Marketing",
+    shortDescription: "A pixel-perfect, fully responsive digital marketing agency website featuring modern design systems, interactive service showcases, case study spotlights, and lead-capture consultation forms.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Flexbox & Grid", "FontAwesome", "UI/UX Design"],
+    githubUrl: "https://github.com/mhady8736/Positivus",
+    liveDemoUrl: "https://mhady8736.github.io/Positivus/",
     featured: true,
     caseStudy: {
-      tagline: "Transforming asynchronous REST streams into fluid, responsive interfaces",
-      overview: "Pulse is a web application designed to demonstrate robust handling of asynchronous data states, API pagination, and complex client-side filtering without sacrificing performance.",
-      problem: "Web applications frequently stutter during continuous user inputs or fail to communicate network latency gracefully, leading to broken user flows.",
-      approach: "Implemented a resilient data-fetching layer with automated debouncing and intentional error boundaries. Structured the interface using fluid CSS Grid systems that adapt gracefully across viewports.",
+      tagline: "Engineering a high-conversion, responsive digital agency web interface from UI design specifications",
+      overview: "Positivus is a modern digital agency web experience built to showcase creative services (SEO, Pay-Per-Click advertising, Social Media Marketing, and Content Creation). The platform is engineered to turn casual visitors into prospective enterprise clients through clear value proposition displays, trust badges, and interactive consultation scheduling.",
+      problem: "Commercial agency websites frequently suffer from slow load times caused by excessive third-party scripts, lack of visual structure, and broken layouts across mobile viewports, leading to high bounce rates.",
+      approach: "Implemented a clean, framework-free architecture utilizing semantic HTML5 and modern CSS3 (Flexbox & CSS Grid). Built a smooth, accessible layout with custom typography, responsive navigation, and engaging interactive consultation calls-to-action.",
       keyFeatures: [
-        "Debounced real-time search eliminating redundant network requests",
-        "Multi-facet parameter filtering with instantaneous client updates",
-        "Graceful loading indicators and network recovery states",
-        "Adaptive data grid displaying compact cards on mobile and analytical tables on desktop"
+        "Pixel-perfect translation of modern Figma agency design systems",
+        "Interactive service breakdown cards detailing SEO, PPC, and content strategies",
+        "Responsive header navigation with clean mobile adaptation and CTA triggers",
+        "Strategic lead-generation consultation booking and client testimonial carousel"
       ],
       architecturalHighlights: [
-        "Custom fetching hooks with cancellation mechanisms for race-condition prevention",
-        "Memoized data selectors for rapid sub-10ms filter computations",
-        "Clean error boundary architecture preventing application crashes"
+        "Pure HTML5 & CSS3 layout without unnecessary external framework overhead",
+        "Optimized asset loading achieving instant First Contentful Paint (FCP)",
+        "Strict semantic structure and cross-browser consistency across modern viewports"
       ]
     }
   },
   {
-    id: "nexus-ui",
-    title: "Nexus UI — Component System & Accessible UI/UX",
-    category: "React / UI/UX Design System",
-    shortDescription: "A modular, accessible React component library and interactive UI system emphasizing responsive layout principles, DOM manipulation, and cross-browser compatibility.",
-    image: "/projects/nexus.png",
-    technologies: ["React", "JavaScript (ES6+)", "UI/UX Design", "HTML5", "CSS3", "Git"],
-    githubUrl: "https://github.com/mhady8736",
-    liveDemoUrl: "https://github.com/mhady8736",
+    id: "tutor",
+    title: "Tutor — 1-on-1 Online Tutoring Platform",
+    category: "HTML5 / CSS3 / JavaScript / EdTech",
+    shortDescription: "An interactive educational web platform connecting students with vetted private tutors for personalized 1-on-1 learning, featuring dynamic metrics, student resources, and clear registration pathways.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "UI/UX Design", "FontAwesome", "Responsive Design"],
+    githubUrl: "https://github.com/mhady8736/Tutor",
+    liveDemoUrl: "https://mhady8736.github.io/Tutor/",
     featured: true,
     caseStudy: {
-      tagline: "Building scalable UI primitives with strict accessibility and user-friendly interaction",
-      overview: "Nexus UI represents a focused implementation of modern UI/UX principles, semantic HTML, and component composition in React. It addresses UI state inconsistency and ensures keyboard accessibility.",
-      problem: "Many web interfaces suffer from inaccessible form controls, poor contrast ratios, and rigid layouts that break across varying screen dimensions.",
-      approach: "Built modular React components with full keyboard navigability (WAI-ARIA specifications), fluid CSS typography, and smooth micro-interactions.",
+      tagline: "Simplifying personalized learning and private instructor discovery through clean, friendly web design",
+      overview: "Tutor is an online educational landing platform built to make 1-on-1 private instruction accessible and trustworthy. The platform highlights key social proof metrics (870+ expert tutors), provides specialized pathways for school and university students, and guides learners directly to finding their ideal tutor.",
+      problem: "Students seeking educational tutoring often struggle with cluttered portals, confusing pricing structures, and ambiguous teacher qualifications.",
+      approach: "Designed a clean, welcoming visual interface with cheerful color accents, satisfaction guarantees, clear platform statistics, and seamless onboarding CTAs. Implemented responsive grid layouts and intuitive navigation.",
       keyFeatures: [
-        "Interactive component playground with real-time prop adjustments",
-        "Full keyboard accessibility with visible focus rings and ARIA attributes",
-        "Responsive design ensuring consistent fidelity across all breakpoints",
-        "Modular component patterns for easy integration across web projects"
+        "Hero section featuring 100% satisfaction guarantee and fast onboarding triggers",
+        "Dynamic platform statistics banner showcasing 870+ verified expert tutors",
+        "Dedicated student resource sections and institutional partnership announcements",
+        "Fluid responsive design tailored for smartphones, tablets, laptops, and large displays"
       ],
       architecturalHighlights: [
-        "Zero-dependency component primitives ensuring minimal bundle overhead",
-        "Accessible DOM manipulation and keyboard event handling",
-        "Strict semantic DOM trees guaranteeing screen-reader readability"
+        "Clean CSS modular class structure ensuring rapid styling maintainability",
+        "Lightweight DOM tree for lightning-fast performance on student mobile devices",
+        "Consistent typography and button component states across interactive elements"
       ]
     }
   }
 ];
+
 
 export const timelineData = [
   {
